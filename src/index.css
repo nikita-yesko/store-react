@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #222;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+header {
+  position: relative;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header .shop-cart .item {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: #e9e9e9 1px solid;
+}
+
+header .shop-cart .item img {
+  width: 90px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+header .shop-cart .item b {
+  font-weight: 600;
+  font-size: 20px;
+  color: #747474;
+}
+
+header .shop-cart .item .delete-icon {
+  color: #222;
+  position: relative;
+  right: 10px;
+  font-size: 16px;
+  float: right;
+  cursor: pointer;
+  transition: color, transform 250ms ease-in;
+}
+header .shop-cart .item .delete-icon:hover {
+  color:crimson;
+  transform: scale(1.2);
+}
+
+header .summa{
+  font-size: 18px;
+  
+  color: #000;
+}
+.shop-cart {
+  padding: 20px;
+  z-index: 1000;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+
+  background: #fafafa;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.shop-cart-button {
+  cursor: pointer;
+  float: right;
+  transition: color, transform 250ms ease-in;
+  margin-right: 30px;
+  font-size: 18px;
+}
+.shop-cart-button:hover,
+.shop-cart-button.active {
+  color: forestgreen;
+  transform: scale(1.3);
+}
+
+header ul.nav {
+  float: right;
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+  cursor: pointer;
+  transition: opacity 500ms ease-in;
+}
+
+header ul.nav li {
+  cursor: pointer;
+  transition: opacity 200ms ease-in;
+}
+
+header ul.nav li:hover {
+  opacity: 0.7;
+}
+
+header .presentaition {
+  position: relative;
+  margin: 50px auto;
+  background: url("./img/header.jpg") no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #a1a1a1;
+}
+
+header .presentaition::after {
+  z-index: 9;
+  content: "Оригинальные кроссовки от известных мировых брендов";
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: #ffffff;
+  width: 550px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+header .presentaition::before {
+  z-index: 9;
+  content: "по низким ценам";
+  position: absolute;
+  bottom: 200px;
+  left: 50px;
+  color: #fff643;
+  width: 600px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+
+
+.categories div{
+  display: inline-block;
+  background: #e9e9e9;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 250ms ease-in;
+}
+
+.categories div:hover{
+ 
+  border-color: forestgreen;
+  transform: scale(1.1);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+main .item {
+  background-color: #e9e9e9;
+  flex-basis: 30%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item__img {
+  overflow: hidden;
+}
+
+.item__content {
+  padding: 20px;
+  position: relative;
+}
+
+.add-to-card {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: forestgreen;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+  transition: scale 200ms ease-in;
+}
+.add-to-card:hover {
+  scale: 1.5;
+}
+.item__content h2,
+.item__content p {
+  margin-bottom: 10px;
+}
+.item__content b {
+  color: forestgreen;
+  font-size: 24px;
+}
+
+main .item img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: scale 250ms ease-in;
+}
+
+main .item:hover img {
+  scale: 1.05;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
