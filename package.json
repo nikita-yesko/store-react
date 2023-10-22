@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nick-brick.github.io/store-react",
   "scripts": {
     "dev": "vite",
     "deploy": "gh-pages -d build",
